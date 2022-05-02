@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'pokmon-solid';
+    src: url('../../Pokédex/pokmon/Pokemon\ Solid.ttf');
+}
+@font-face {
+    font-family: 'pokmon-hollow';
+    src: url('../../Pokédex/pokmon/Pokemon\ Hollow.ttf');
+}
+
+.logo{
+    font-size: 6em;
+}
+h2{
+    font-size: 2em;
+    font-weight: lighter;
+    color: $fontColor02;
+    margin-top: 4%;
+}
+.para--01{
+    font-size: 1.5em;
+
+    color: $numberColor;
+    @include margin;
+}
+.para--02{
+    color: $fontColor02;
+    @include margin;
+    font-size: 2em;
+}
+.para--03{
+    font-weight: bold;
+    font-size: 2.5em;
+    @include margin;
+}
+.skills{
+    padding-top: 15px;
+    font-size: 1.5em;
+    color: black;
+}

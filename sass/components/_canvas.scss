@@ -1,0 +1,8 @@
+.break-out{
+    background: $fontColor01;
+    @include flexBox;
+}
+canvas {
+    border: double #302f2f 4px;
+    background-color: #f1f1f1;
+}

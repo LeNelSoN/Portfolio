@@ -1,0 +1,15 @@
+header{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        color: $fontColor03;
+        span{
+            color: $numberColor;
+        }
+    }
+    nav{
+        display: flex;
+    }
+}

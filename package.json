@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-nelis-valentin",
+  "version": "1.0.0",
+  "description": "Site dynamique présentant les réalisations de valentin nelis",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix" : "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserlist": "last 4 versions"
+}

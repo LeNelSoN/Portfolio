@@ -1,0 +1,116 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./components/bouton";
+@import "./base/all";
+@import "./layouts/header";
+@import "./components/number";
+@import "./base/fonts";
+@import "./components/canvas";
+@import "./components/todolist";
+@import "./components/progress";
+@import "./pokédex";
+
+.social{
+    //width: 10%;
+    .social--list{
+        right: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        position: sticky;
+        top:20%;
+    }
+    .social--link{
+        display: flex;
+        width: 4vmax;
+        height: 4vmax;
+        margin: 15% 2%;
+}}
+
+@media screen and (max-width: 1240px) {
+    .social{
+         .social--list {
+      flex-direction: row;
+    }
+    .social--link{
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+    }
+    #part-2{
+        @include flexBox(flex-start);
+    }
+}
+.para--01, .para--02, .para--03{
+    padding: 5px;
+    font-size: 1em;
+  }
+}
+
+.wrapper{
+    @include boxShadow($shadowColor: #000 );
+    border: solid $colorAlt 1px;
+    border-radius: 15px;
+    height: 60%;
+    padding: 20px;
+    margin: 50px;
+    background-color: $colorAlt;
+    #part-1, #part-2, #part-3{
+        border: solid 2px $fontColor01;
+    }
+}
+.mail{
+    //width: 10%;
+    a{
+        display: block;
+        transform: rotate(deg);
+        transform-origin: left;
+        position: sticky;
+        top:20%;
+    }
+}
+
+
+.drop-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 1.3rem solid;
+    border-right: 1.1rem solid transparent;
+    border-bottom: 0;
+    border-left: 1.1rem solid transparent;
+}
+
+#part-2{
+    @include flexBox(flex-start);
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 18rem;
+    height: 34rem;
+    padding: 5px;
+    margin: 15px;
+    @include boxShadow; 
+    &-body{
+        border: $colorAlt solid 2px;
+        margin-top: 5px;
+        h2,h3,p{
+            color: $fontColor04 ;
+        }
+    }
+    &-text{
+    }
+    &-link{
+        text-decoration: none;
+    }
+}
+
+.carousel{
+    margin: 0 0 20px 0;
+    .carousel-item img{
+        border-radius: 100px 190px 80px 190px;
+    }
+}

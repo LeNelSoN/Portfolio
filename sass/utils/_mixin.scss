@@ -1,0 +1,21 @@
+@mixin backGradient {
+    background: linear-gradient(rgb(3, 3, 36), rgb(20, 20, 20));    
+}
+
+@mixin backGradient2 {
+    background: linear-gradient(rgb(241, 241, 241), rgb(87, 87, 87));    
+}
+
+@mixin margin {
+    margin: 2% 0;
+}
+
+@mixin flexBox($items:center, $content:center) {
+    display: flex;
+    align-items: $items;
+    justify-content: $content;
+}
+@mixin boxShadow($shadowColor: #000){
+    box-shadow: $shadowColor 5px 5px 15px;
+}
+
